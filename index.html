@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a D' to' un poquito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="welcome-text animate__animated animate__fadeIn">Bienvenidos a D' to' un poquito</div>
+        <div class="loading-container">
+            <img src="images/loading.gif" alt="Cargando..." class="loading-image">
+            <div class="spinner-overlay"></div>
+        </div>
+    </div>
+    <header>
+        <h1>Bienvenidos a D' to' un poquito</h1>
+        <input type="text" id="search-bar" placeholder="Buscar productos...">
+    </header>
+    <main>
+        <form id="session-form">
+            <h2>Crear sesión</h2>
+            <input type="text" id="session-name" placeholder="Nombre de la sesión" required>
+            <button type="submit">Crear sesión</button>
+        </form>
+        <form id="product-form">
+            <h2>Agregar producto</h2>
+            <input type="text" id="product-name" placeholder="Nombre del producto" required>
+            <input type="text" id="product-price" placeholder="Precio del producto" required>
+            <input type="file" id="product-image" accept="image/*" required>
+            <select id="session-select"></select> <!-- Selector de sesión -->
+            <button type="submit">Agregar producto</button>
+        </form>
+        <div id="catalog"></div> <!-- Contenedor de catálogos -->
+    </main>
+    <button id="floating-cart" onclick="showCart()">
+        <img src="images/cart-icon.jpeg" alt="Carrito"> Ver Carrito de Compras
+    </button> <!-- Botón de carrito flotante -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
